@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-24T15:41:30 IST" name="Default suite" finished-at="2025-01-24T15:41:30 IST" duration-ms="56">
+    <groups>
+    </groups>
+    <test started-at="2025-01-24T15:41:30 IST" name="Default test" finished-at="2025-01-24T15:41:30 IST" duration-ms="56">
+      <class name="Day22.AllAnnotations">
+        <test-method is-config="true" signature="bs()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="bs" finished-at="2025-01-24T15:41:30 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bs -->
+        <test-method is-config="true" signature="bt()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="bt" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method is-config="true" signature="bc()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="bc" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bc -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="bm" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="tm1()[pri:2, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="tm1" finished-at="2025-01-24T15:41:30 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tm1 -->
+        <test-method is-config="true" signature="am()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="am" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="bm" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="tm2()[pri:2, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="tm2" finished-at="2025-01-24T15:41:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tm2 -->
+        <test-method is-config="true" signature="am()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="am" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="at()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="at" finished-at="2025-01-24T15:41:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+        <test-method is-config="true" signature="ac()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="ac" finished-at="2025-01-24T15:41:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac -->
+        <test-method is-config="true" signature="as()[pri:0, instance:Day22.AllAnnotations@4550bb58]" started-at="2025-01-24T15:41:30 IST" name="as" finished-at="2025-01-24T15:41:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as -->
+      </class> <!-- Day22.AllAnnotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
