@@ -17,7 +17,7 @@ public class Brokenlink {
 		WebDriver driver = new ChromeDriver();
 
 		// Open the webpage
-		driver.get("https://m2.prod.basepaving.co.uk.cfstack.com/");
+		driver.get("https://crosthwaiteandgardiner.com/");
 
 		// Find all the links on the webpage
 		List<WebElement> links = driver.findElements(By.tagName("a"));
