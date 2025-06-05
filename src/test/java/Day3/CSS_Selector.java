@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CSS_locators {
+public class CSS_Selector {
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.nopcommerce.com/");
@@ -16,7 +16,7 @@ public class CSS_locators {
 		
 		
 		
-		//Tag and Class    //tag.class
+		//Tag and Class    //tag.classname
 		driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("t-shirt");
 		driver.findElement(By.cssSelector(".search-box-text")).sendKeys("t-shirt");        //approach 2   // it can locate multiple element
 		

@@ -15,26 +15,30 @@ public class Brokenlink {
 
 		// Initialize ChromeDriver
 		WebDriver driver = new ChromeDriver();
-
+		int count =0;
 		// Open the webpage
-		driver.get("https://crosthwaiteandgardiner.com/");
+		driver.get("https://duncanstewart1978.co.uk/");
 
 		// Find all the links on the webpage
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 
 		// Iterate through each link
 		for (WebElement link : links) {
+			
 			String url = link.getAttribute("href");
+			
 			if (url != null && !url.isEmpty()) {
 				// Check if the link is broken
 				if (checkLinkStatus(url)) {
 					System.out.println("Broken Link: " + url);
 				} else {
 					System.out.println("Valid Link: " + url);
+					count++;
 				}
 			}
 		}
 
+		System.out.println(count);
 		// Close the browser
 		driver.quit();
 	}

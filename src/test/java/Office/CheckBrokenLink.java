@@ -1,4 +1,4 @@
-package Day18;
+package Office;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -9,18 +9,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-/*  steps:-  
-  	1) Link  href="https://xyz.com"
- 
 
-	2) htpps://xyx.com"----> server-----> status code 
+public class CheckBrokenLink {
 
-	3) status code >=400 broken link 
-   	   status code <= 400 not a broken link 
-*/
-
-public class BrokenLinkDemo {
-	public static void main(String[] args) {
+	public static void main(String ars[]) {
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -46,12 +39,15 @@ public class BrokenLinkDemo {
 				
 				URL linkURL=new URL(hrefattvalue);											// CONVERTED href VALUE FROM STRING TO URL FORMAT
 				HttpURLConnection conn = (HttpURLConnection) linkURL.openConnection();		 // OPEN CONNECTION TO THE SERVER
+				
+				conn.setRequestMethod("HEAD"); 												//check only head
 				conn.connect(); 															// connect to server and request to server
 				
+				int response = conn.getResponseCode();
 				
-				if ( conn.getResponseCode() >= 400) 
+				if ( response >= 400) 
 				{
-					System.err.println("broken link====> "+hrefattvalue);
+					System.err.println("broken link====> "+hrefattvalue +"   "+response);
 					noOfBrokenlink++;
 				}
 				else 
@@ -67,6 +63,7 @@ public class BrokenLinkDemo {
 		}
 		
 		System.out.println("number of broken links "+noOfBrokenlink);
+		
 		
 		
 		

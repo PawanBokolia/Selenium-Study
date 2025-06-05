@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practise2.TitleCheck">
+      <class name="Practise2.pawan">
         <methods>
-          <include name="megamenu"/>
+          <include name="colortest"/>
         </methods>
-      </class> <!-- Practise2.TitleCheck -->
+      </class> <!-- Practise2.pawan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

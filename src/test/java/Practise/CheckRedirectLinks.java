@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CheckRedirectLinks {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         // Set up Chrome WebDriver
         WebDriver driver = new ChromeDriver();
 
@@ -20,7 +20,7 @@ public class CheckRedirectLinks {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
         // Path to your Excel file
-        String excelFilePath = "C:\\Users\\Admin\\Downloads\\LOVE BREWING_ 404 redirects.xlsx";
+        String excelFilePath = "D:\\Workspace\\Untitled spreadsheet.xlsx";
         FileInputStream fileInputStream = new FileInputStream(excelFilePath);
 
         // Open the Excel file
@@ -37,7 +37,7 @@ public class CheckRedirectLinks {
 
             // Open the source link in the browser
             driver.get(sourceLink);
-
+           
             // Get the current URL after possible redirection
             String currentUrl = driver.getCurrentUrl();
 
@@ -47,6 +47,10 @@ public class CheckRedirectLinks {
             } else {
                 System.out.println("FAIL: " + sourceLink + " redirected to " + currentUrl + ", expected: " + expectedRedirect);
             }
+            
+            Thread.sleep(10000);
+            
+            
         }
 
         // Close workbook and browser
