@@ -9,15 +9,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class CheckBrokenLink {
 
 	public static void main(String ars[]) {
 		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://m2dev.jerrysartarama.com/");
+		driver.get("https://flags.co.uk/");
 		driver.manage().window().maximize();
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
@@ -27,9 +31,10 @@ public class CheckBrokenLink {
 		for (WebElement linkelement : links)
 		{
 			String hrefattvalue = linkelement.getAttribute("href");
-			if (hrefattvalue == null || hrefattvalue.isEmpty()) 
+			if (hrefattvalue == null || hrefattvalue.isEmpty() || hrefattvalue == "https://flags.co.uk/#") 
 			{
 				System.out.println("href attribute value is null or empty os not possible to check");
+				System.err.println(hrefattvalue);
 				continue;
 			}
 
@@ -45,14 +50,14 @@ public class CheckBrokenLink {
 				
 				int response = conn.getResponseCode();
 				
-				if ( response >= 400) 
+				if ( response >= 400 ) 
 				{
 					System.err.println("broken link====> "+hrefattvalue +"   "+response);
 					noOfBrokenlink++;
 				}
 				else 
 				{
-					System.out.println("Not a broken link======> "+hrefattvalue);
+					System.out.println("Not a broken link======> "+hrefattvalue +"      " +response);
 				}
 
 			} 

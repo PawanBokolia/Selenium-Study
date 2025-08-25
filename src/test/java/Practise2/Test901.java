@@ -16,7 +16,7 @@ public class Test901 {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		driver.get("https://www.scentperfique.com/");
+		driver.get("");
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		Actions act = new Actions(driver);
